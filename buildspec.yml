@@ -1,0 +1,33 @@
+---
+project:
+  description: File::DistDir - locate and copy installed Perl distribution resources 
+  author:
+    name: Rob Lauer
+    mailto: rclauer@gmail.com
+pm-module: File::DistDir
+min-perl-version: 5.010
+dependencies:
+  requires: requires
+  test-requires: test-requires
+  recommends: recommends
+  suggests: suggests
+path:
+  pm-module: lib
+  exe-files: bin
+  tests: t
+extra-files:
+  - ChangeLog
+  - share:
+      - README.md
+resources:
+  bugtracker:
+    mailto: rclauer@gmail.com
+    web: https://github.com/rlauer6/File-DistDir/issues
+  homepage: https://github.com/rlauer6/File-DistDir
+  repository:
+    type: git
+    web: https://github.com/rlauer6/File-DistDir
+    url: git@github.com:rlauer6/File-DistDir.git
+man-links:
+  - 
+    dist-dir: File::DistDir::CLI
