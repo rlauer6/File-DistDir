@@ -2,6 +2,7 @@
 
 ALIAS ?= $(shell echo $(MODULE_NAME) | sed -e 's/::/-/g' | tr [:upper:] [:lower:])
 
+ifeq ($(MODULINO_ENABLED),1)
 MODULINO = bin/$(ALIAS)
 
 $(MODULINO): $(MODULE_PATH)
@@ -21,3 +22,4 @@ $(COMPLETION_PATH): $(MODULINO)
 bash-completion: $(COMPLETION_PATH) ## create a bash completion function for CLI::Simple scripts
 	$(NO_ECHO)echo "source $(COMPLETION_PATH)"
 
+endif

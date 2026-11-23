@@ -52,6 +52,8 @@ export DARKPAN_URL
 
 LOG_LEVEL ?= info
 
+MODULINO_ENABLED ?= 1
+
 TARBALL_ORDER_ONLY_PREREQS ?=
 
 GIT_NAME     ?= $(shell $(GIT) config --global user.name 2>/dev/null || echo "Anonymouse")
